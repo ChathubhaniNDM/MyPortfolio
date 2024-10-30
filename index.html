@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/abe9ef145f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>IT Fresh Graduate</p>
+                <h1>Hi, I'm <span>Chathubhani</span><br>Aspiring Software<br>Engineer</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------about------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" class="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="aboutme">I am an aspiring software engineer with hands-on experience from a recent internship(MERN), where I developed skills in html, css, java script, php and React.js as frontend development and node.js, java as backend development. Recently graduating with a BSc (Hons) in Information Technology. I have completed several software development projects, including developing a web application as a solution of climate changes named green planet, a web application for tourism and hospitality managemnt, Social Media web application for foodies - HungryHub and I as a final year research - developed a mobile application for wildlife detection and camper safety enhancement.
+
+                        As I begin my career, I’m eager to apply my skills in a collaborative, growth-oriented environment. I’m excited to contribute to innovative projects and continue developing as a developer, turning ideas into applications that make a difference.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Frontend Development</span><br>Experienced in React.js for creating dynamic, responsive user interfaces.</li>
+                                <li><span>Backend Development</span><br>Knowledgeable in Node.js and Express.js for building server-side applications.</li>
+                                <li><span>Programming Languages</span><br>Experienced in Java for object-oriented programming.</li>
+                                <li><span>Databases</span><br>Skilled in SQL, MySQL, and MongoDB for managing relational and NoSQL databases.</li>
+                                <li><span>Web Development</span><br>Knowledgeable in HTML and CSS for structuring and styling web applications.</li>
+                                <li><span>Version Control</span><br>Familiar with Github for code management and collaboration.</li>
+                                <li><span>Project Collaboration</span><br>Experienced in working collaboratively on projects, focusing on clean code practices and efficient problem-solving.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Intern-Software Engineer</span><br>EWIS Career Training Pvt Ltd | Dec 2023 - Jun 2024</li>
+                                <ul class="custom-bullets">
+                                    <li>Contributed to the CADD Centre System (Stages 1 and 2), a university management system focused on streamlining administrative and academic processes.</li>
+                                </ul>
+                                <li><span>Project Contributions</span><br>Green Planet – Developed the Agent Management component for a web application.</li>
+                                <ul>
+                                    <li>Tourism and Hospitality Management – Built the Guides Management part of a web application to support tourism services.</li>
+                                    <li>HungryHub – Created the Comment Management system for a social media platform for food enthusiasts.</li>
+                                    <li>Wildlife Detection and Camper Safety – For my final-year research, developed a mobile app aimed at enhancing camper safety with features like tent construction guidance and wildlife detection.</li>
+
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>BSc (Hons) in Information Technology Specialising in Information Technology</span><br>Sri Lanka Institute of Information Technology<br>2020 Sep - 2024 July</li>
+                                <li><span>Advanced Level</span><br>Sri Sumangala Girl's School, Panadura(2017 - Art Stram)<br><br>2B's and C</li>
+                                <li><span>Ordinary Level</span><br>Sri Sumangala Girl's School, Panadura(2013)<br><br>3A's, 2B's, 3C's and S</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------Projects-------------------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Camper Shield Website: Developed a user-friendly website that provides essential information and resources of our research journey.</p><br>
+                    <p>Online Clothing Store Website: Created an online shopping platform using HTML, CSS, and JavaScript, allowing users to browse and purchase clothing items seamlessly.</p>
+                </div>
+                <div>
+                    <h2>Mobile App Development</h2>
+                    <p>Camper Shield App: Designed and developed a mobile application using React Native and Python, offering campers guidance on safety, tent setup, and essential camping tips.</p><br>
+                    <p>Budget Planning App: Developed an application using Java that helps users manage their finances and create budgets, promoting better financial planning.</p>
+                </div>
+                <div>
+                    <h2>Other Projects</h2>
+                    <p>CADD Centre System: Contributed to the development of a university management system, streamlining administrative tasks and enhancing user experience for students and faculty.</p><br>
+                    <p>Green Planet: Worked on the agent management component of this web application, focusing on climate change solutions through community engagement and awareness initiatives.</p><br>
+                    <p>HungryHub: Contributed to the comment management system of this social media web application tailored for food lovers, facilitating user interactions and reviews.</p><br>
+                    <p>Tourism and Hospitality Management System: Developed components for a web application that supports the management of tourism services and guides, improving the overall experience for tourists.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------Portfolio---------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work">
+                    <div class="layer">
+                        <h3>Green Planet App</h3>
+                        <p>A web application focused on climate change solutions, specifically designed to manage and coordinate community-driven initiatives. The app facilitates the appointment of district-wise agents to conduct awareness sessions and launch projects such as planting trees, waste recycling, and environmental education programs.</p>
+                            <a href="greenplanet.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work">
+                    <div class="layer">
+                        <h3>Camper Shield Website</h3>
+                        <p>A comprehensive platform that showcases our research project, featuring critical elements such as the identified research gap, project milestones, presentation details, and additional supporting documents. This website serves as a centralized resource for sharing information and updates related to the project, enhancing visibility and collaboration among stakeholders.</p>
+                            <a href="campershield.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>An e-commerce website developed using HTML, CSS, and JavaScript that allows users to browse, select, and purchase clothing items effortlessly. The platform features an intuitive user interface, ensuring a smooth shopping experience with easy navigation and secure transactions.</p>
+                            <a href="shoppingapp.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ------------------Contact---------------------  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Chathubhani.<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbypkMHfWvt1CNxynD9IGHUUwiTbkuHVh7vjLk5w8GKZJJXELrgWqIfaL_tmaXcLhnDTJA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
